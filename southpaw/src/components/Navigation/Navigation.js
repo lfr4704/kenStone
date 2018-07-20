@@ -7,15 +7,19 @@ class Navigation extends React.Component {
 		return (
 			<nav>
 				<div className="toggle">
-					<i className="fa fa-bars" aria-hidden="true"></i>
+					<i className="fa fa-bars" aria-hidden="true" onClick={this.props.toggleMenu}></i>				
 				</div>
-				<ul>
-					<li><a href="#">Home</a></li>
-					<li><a href="#">About</a></li>
-					<li><a href="#">Services</a></li>	
-					<li><a href="#">Testimonials</a></li>
-					<li><a href="#">Contact</a></li>															
-				</ul>
+				<div>
+					{this.props.showMenu &&
+					<ul>
+						<li><a href="#">Home</a></li>
+						<li><a href="#">About</a></li>
+						<li><a href="#">Services</a></li>	
+						<li><a href="#">Testimonials</a></li>
+						<li><a href="#">Contact</a></li>															
+					</ul>
+					}
+				</div>
 			</nav>
 
 		);
