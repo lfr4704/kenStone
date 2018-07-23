@@ -1,29 +1,33 @@
-import React from 'react'
-import './Navigation.css'
-import {Fabars} from 'react-icons/lib/fa';
+import React from 'react';
+import DrawerToggleButton from '../SideDrawer/DrawerToggleButton';
+import './Navigation.css';
 
-class Navigation extends React.Component {
-	render(){
-		return (
-			<nav>
-				<div className="toggle">
-					<i className="fa fa-bars" aria-hidden="true" onClick={this.props.toggleMenu}></i>				
-				</div>
+
+
+const navigation = props => (
+	<header className ="toolbar">
+			<nav className ="toolbar_navigation">
 				<div>
-					{this.props.showMenu &&
+					<DrawerToggleButton />
+				</div>
+				<div className="toolbar_logo"><a href="/">The Logo</a></div>
+				<div className="spacer"></div>
+				<div className="toolbar_nagivation-items">
+					
 					<ul>
 						<li><a href="#">Home</a></li>
 						<li><a href="#">About</a></li>
 						<li><a href="#">Services</a></li>	
-						<li><a href="#">Testimonials</a></li>
+						<li><a href="#">Gallery</a></li>
 						<li><a href="#">Contact</a></li>															
 					</ul>
-					}
+					
 				</div>
 			</nav>
+	</header>
 
-		);
-	}
-}
+);
 
-export default Navigation; 
+
+
+export default navigation; 
