@@ -7,7 +7,7 @@ import Navigation from './components/Navigation/Navigation.js'
 class App extends React.Component {
   constructor(props){
     super(props);
-    this.state ={ showMenu: true };
+    this.state ={ showMenu: true };//https://medium.com/@baphemot/understanding-reactjs-setstate-a4640451865b for set state explanation
     this.toggleMenu = this.toggleMenu.bind(this);
 
   }
