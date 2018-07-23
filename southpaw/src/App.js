@@ -3,6 +3,7 @@ import React, { Component } from 'react';
 import './App.css';
 import Navigation from './components/Navigation/Navigation.js';
 import SideDrawer from './components/SideDrawer/SideDrawer.js'
+import Backdrop from './components/Backdrop/Backdrop.js'
 
 class App extends React.Component {
   constructor(props){
@@ -25,6 +26,7 @@ class App extends React.Component {
       <div className="App">
         <Navigation/>
         <SideDrawer/>
+        <Backdrop/>
         
         <main className="article">
           <p>This is the page content</p>

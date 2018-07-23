@@ -12,14 +12,13 @@ const navigation = props => (
 				</div>
 				<div className="toolbar_logo"><a href="/">The Logo</a></div>
 				<div className="spacer"></div>
-				<div className="toolbar_nagivation-items">
-					
+				<div className="toolbar_navigation-items">
 					<ul>
-						<li><a href="#">Home</a></li>
-						<li><a href="#">About</a></li>
-						<li><a href="#">Services</a></li>	
-						<li><a href="#">Gallery</a></li>
-						<li><a href="#">Contact</a></li>															
+						<li><a href="/">Home</a></li>
+						<li><a href="/">About</a></li>
+						<li><a href="/">Services</a></li>	
+						<li><a href="/">Gallery</a></li>
+						<li><a href="/">Contact</a></li>															
 					</ul>
 					
 				</div>
