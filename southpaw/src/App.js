@@ -22,18 +22,16 @@ class App extends Component {
 
 
   render() {
-    let sideDrawer;
     let backdrop;
 
     if(this.state.sideDrawerOpen){
-      sideDrawer = <SideDrawer/>;
       backdrop = <Backdrop click={this.backdropClickHandler} />
     }
 
     return (
       <div className="App">
         <Navigation drawerClickHandler={this.drawerToggleClickHandler}/>
-        {sideDrawer}
+        <SideDrawer show={this.state.sideDrawerOpen} />
         {backdrop}
         <main className="article">
           <p>This is the page content</p>
