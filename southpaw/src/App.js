@@ -4,8 +4,12 @@ import './App.css';
 import Navigation from './components/Navigation/Navigation.js';
 import SideDrawer from './components/SideDrawer/SideDrawer.js';
 import Backdrop from './components/Backdrop/Backdrop.js';
+import Header from './components/Header/Header.js';
 
 class App extends Component {
+  constructor(){
+    super()
+  }
   state ={
     sideDrawerOpen: false
   };
@@ -15,7 +19,7 @@ class App extends Component {
       return {sideDrawerOpen: !prevState.sideDrawerOpen};
     });
   };
-  
+
   backdropClickHandler= () => {
     this.setState({sideDrawerOpen: false})
   };
@@ -35,6 +39,7 @@ class App extends Component {
         {backdrop}
         <main className="article">
           <p>This is the page content</p>
+          <Header />
         </main>
       </div>
     );
