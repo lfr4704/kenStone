@@ -1,10 +1,26 @@
-.header-style{
-  display: inline-block;
+.header-container{
+  display: flex;
   overflow: hidden;
+
+}
+
+.header-container div {
+
+}
+
+.box-1 img{
+  height: 281px;
+  margin-left: 45px;
+}
+
+.box-2{
+
+}
+
+.box-3 img{
+  height: 281px;
 }
 
 img {
-
-  width: 33%;
-  margin: -80px 0 0px 0;
+  margin: -0px 0 -15px 0;
 }

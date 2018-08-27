@@ -1,0 +1,29 @@
+.packages-container{
+  display: flex;
+
+}
+
+.packages-container div {
+  border: 1px #ccc solid;
+  padding: 10px;
+
+}
+
+.box-1 {
+
+}
+
+.box-2 {
+  flex: 1;
+  order: 1; /* order not needed if starts with 1 */
+}
+
+.box-3{
+  flex: 1;
+  order: 2;
+}
+
+.box-4{
+  flex: 1;
+  order: 3;
+}
