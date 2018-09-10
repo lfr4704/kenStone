@@ -6,6 +6,7 @@ import SideDrawer from './components/SideDrawer/SideDrawer.js';
 import Backdrop from './components/Backdrop/Backdrop.js';
 import Header from './components/Header/Header.js';
 import Packages from './components/Packages/Packages.js';
+import Contact from './components/Contact/Contact.js';
 
 class App extends Component {
   constructor(){
@@ -42,6 +43,7 @@ class App extends Component {
           <p>This is the page content</p>
           <Header />
           <Packages />
+          <Contact />
         </main>
       </div>
     );
